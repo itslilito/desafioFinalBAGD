@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://ch0xqj5ivjyry"]
+
+[ext_resource type="Script" uid="uid://yqstbwe64vlp" path="res://calavera.gd" id="1_ubslt"]
+[ext_resource type="Texture2D" uid="uid://vhn5rm51qw6m" path="res://assets/sprites/calavera1.png" id="2_2t7lv"]
+[ext_resource type="Texture2D" uid="uid://cb7aifa5r6e8a" path="res://assets/sprites/calavera2.png" id="3_jkok7"]
+[ext_resource type="AudioStream" uid="uid://ca7u4oymnrmd7" path="res://assets/audio/glu.wav" id="4_2t7lv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_66r6p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_2t7lv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jkok7")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kvm8g"]
+radius = 180.025
+
+[node name="calavera" type="Area2D" node_paths=PackedStringArray("animacion", "sonido", "colision")]
+script = ExtResource("1_ubslt")
+animacion = NodePath("AnimatedSprite2D")
+sonido = NodePath("glu")
+colision = NodePath("CollisionShape2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_66r6p")
+animation = &"idle"
+frame_progress = 0.396264
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -83)
+shape = SubResource("CircleShape2D_kvm8g")
+
+[node name="glu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_2t7lv")
+
+[connection signal="body_entered" from="." to="." method="colision_personaje"]

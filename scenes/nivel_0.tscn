@@ -1,0 +1,2382 @@
+[gd_scene load_steps=135 format=4 uid="uid://j5hr23nm7glh"]
+
+[ext_resource type="Texture2D" uid="uid://cylbfg30fpshn" path="res://assets/sprites/atlas_interno.png" id="1_5tvtd"]
+[ext_resource type="PackedScene" uid="uid://dni7nnhlavljm" path="res://scenes/murciegalito.tscn" id="1_m0eps"]
+[ext_resource type="PackedScene" uid="uid://c76wtbltx6dtq" path="res://scenes/nivel_1.tscn" id="1_ygo7o"]
+[ext_resource type="Script" uid="uid://hsaymr858gqr" path="res://scenes/slime_moneda_lvl_1.gd" id="2_qm2cm"]
+[ext_resource type="Texture2D" uid="uid://4urjbrkyo00v" path="res://assets/sprites/atlas_externo.png" id="2_ykt4k"]
+[ext_resource type="Texture2D" uid="uid://cvpyoxxgmxyl2" path="res://assets/sprites/pared_baja.png" id="3_gyam2"]
+[ext_resource type="PackedScene" uid="uid://2t10jraexwsm" path="res://scenes/llave.tscn" id="3_ocvmy"]
+[ext_resource type="Script" uid="uid://bgve13bfgbxpn" path="res://scenes/slime_hueso.gd" id="4_4irve"]
+[ext_resource type="Texture2D" uid="uid://cfhtudchb5gsg" path="res://assets/sprites/slime_hueso1.png" id="4_mnj58"]
+[ext_resource type="Texture2D" uid="uid://dy1fngynb4eir" path="res://assets/sprites/barrera1.png" id="5_2g2hs"]
+[ext_resource type="Texture2D" uid="uid://3mbeccyw86yd" path="res://assets/sprites/slime_hueso2.png" id="5_4irve"]
+[ext_resource type="Script" uid="uid://c4xiil07qxxfe" path="res://scenes/barrera_1.gd" id="5_66f4m"]
+[ext_resource type="Texture2D" uid="uid://t0rd4mokc2yh" path="res://assets/sprites/barrera2.png" id="6_66f4m"]
+[ext_resource type="Script" uid="uid://cj3invnm2y8dt" path="res://scenes/slime_hueso_lvl_1.gd" id="6_a2pa5"]
+[ext_resource type="Texture2D" uid="uid://cw028yurqswuw" path="res://assets/sprites/slime_moneda2.png" id="6_a4etg"]
+[ext_resource type="Script" uid="uid://broblxlu6gb6p" path="res://scenes/slime_moneda_lvl_12.gd" id="6_hi4ma"]
+[ext_resource type="Texture2D" uid="uid://bjrbvrjqvdqxj" path="res://assets/sprites/slime_moneda1.png" id="7_1pc6p"]
+[ext_resource type="Script" uid="uid://kate166add1" path="res://scenes/slime_moneda.gd" id="7_8f22w"]
+[ext_resource type="PackedScene" uid="uid://cerluodyikjfi" path="res://scenes/llave_2.tscn" id="8_lad37"]
+[ext_resource type="Script" uid="uid://bf8q4g60d23a2" path="res://scenes/pared_trampa_2.gd" id="12_lg2wl"]
+[ext_resource type="Texture2D" uid="uid://b76v3mmecw3r8" path="res://assets/sprites/reja.png" id="12_yinww"]
+[ext_resource type="Script" uid="uid://cfcpijbqqwfr7" path="res://scenes/barrera_2.gd" id="13_hdn1f"]
+[ext_resource type="Script" uid="uid://bu3ceff8wxjxo" path="res://scenes/reja.gd" id="15_6n4jw"]
+[ext_resource type="Script" uid="uid://iqxggp5gkw8c" path="res://scenes/montana.gd" id="15_7eoxc"]
+[ext_resource type="Script" uid="uid://ifwjysq4i4in" path="res://scenes/area_trampa_2.gd" id="16_2kuvd"]
+[ext_resource type="Script" uid="uid://dnaarkn1vy64y" path="res://scenes/puerta_final.gd" id="16_2p01o"]
+[ext_resource type="Texture2D" uid="uid://brtr5mlne50rp" path="res://assets/sprites/montana.png" id="16_dgdec"]
+[ext_resource type="PackedScene" uid="uid://ch0xqj5ivjyry" path="res://scenes/calavera.tscn" id="16_dhqca"]
+[ext_resource type="Texture2D" uid="uid://clu12x7leewv7" path="res://assets/sprites/puerta_final.png" id="16_lag80"]
+[ext_resource type="Texture2D" uid="uid://d27vn28e8h034" path="res://assets/sprites/pared_frente.png" id="17_dgdec"]
+[ext_resource type="Script" uid="uid://xeensntmtp6u" path="res://scenes/area_trampa.gd" id="18_er1db"]
+[ext_resource type="AudioStream" uid="uid://ca7u4oymnrmd7" path="res://assets/audio/glu.wav" id="20_1itg4"]
+[ext_resource type="Texture2D" uid="uid://b10swyadfovns" path="res://assets/sprites/pared-baja-d.png" id="20_lg2wl"]
+[ext_resource type="Script" uid="uid://cf0kg7s0p5a0w" path="res://scenes/pared_trampa.gd" id="20_thws0"]
+[ext_resource type="Texture2D" uid="uid://dgk6jyvlfnh3d" path="res://assets/sprites/pared-baja-i.png" id="22_dlrx8"]
+[ext_resource type="Script" uid="uid://btd84hwpy87ft" path="res://scenes/cuadros.gd" id="23_gssgy"]
+[ext_resource type="Texture2D" uid="uid://fs65cdeup7jk" path="res://assets/sprites/no_caminable.png" id="23_twhii"]
+[ext_resource type="Texture2D" uid="uid://fikqpp10wo7l" path="res://assets/sprites/cuadro 1.png" id="23_uxyyl"]
+[ext_resource type="Texture2D" uid="uid://061o8dx06xpf" path="res://assets/sprites/cuadro2.png" id="24_gssgy"]
+[ext_resource type="Texture2D" uid="uid://cq78twnm7nudf" path="res://assets/sprites/cuadro3.png" id="25_1itg4"]
+[ext_resource type="Script" uid="uid://1gx536d3cfes" path="res://scenes/escalera_final.gd" id="25_lpiox"]
+[ext_resource type="Texture2D" uid="uid://qngjegv65sau" path="res://assets/sprites/baldosa codigo.png" id="26_gyam2"]
+[ext_resource type="Texture2D" uid="uid://duptao40g5kn0" path="res://assets/sprites/llave1.png" id="28_27l0r"]
+[ext_resource type="Texture2D" uid="uid://j727f2quqv0p" path="res://assets/sprites/escalera.png" id="33_27l0r"]
+[ext_resource type="PackedScene" uid="uid://cel225hhuem06" path="res://scenes/ticket.tscn" id="42_8aaad"]
+[ext_resource type="Script" uid="uid://dw43ursu56ysy" path="res://scenes/cuadro_1.gd" id="46_dlrx8"]
+[ext_resource type="Script" uid="uid://cjdaisdedh25k" path="res://scenes/cuadro_2.gd" id="47_8auba"]
+[ext_resource type="Script" uid="uid://bxvqaj1f1u45x" path="res://scenes/cuadro_3.gd" id="48_tj2he"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ygo7o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_1pc6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_a4etg")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_a2pa5"]
+radius = 327.835
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2p01o"]
+size = Vector2(556, 4729)
+
+[sub_resource type="Animation" id="Animation_8auba"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Soy el slime de seguridad"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:visible_ratio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_bsui4"]
+resource_name = "pasar"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Ahora sí, pasá"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_lg2wl"]
+resource_name = "sin_ticket"
+length = 6.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.99, 2, 3.99, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": ["Soy el slime de seguridad", "Soy el slime de seguridad", "No vas a poder pasar sin un ticket", "No vas a poder pasar sin un ticket", "Traé uno y saco la barrera invisible"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 2.5, 3.99, 4, 4.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 6, 6.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tj2he"]
+_data = {
+&"RESET": SubResource("Animation_8auba"),
+&"pasar": SubResource("Animation_bsui4"),
+&"sin_ticket": SubResource("Animation_lg2wl")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qm2cm"]
+size = Vector2(1014, 4846)
+
+[sub_resource type="LabelSettings" id="LabelSettings_2kuvd"]
+font_size = 78
+font_color = Color(0.713726, 0.686275, 0.768627, 1)
+shadow_size = 38
+shadow_color = Color(0.109804, 0.0509804, 0.211765, 0.607843)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ffvlp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_mnj58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4irve")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2p01o"]
+radius = 327.835
+
+[sub_resource type="Animation" id="Animation_lpiox"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("textoSinHueso:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("textoSinHueso:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("textoSinHueso:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["206... 206! 206!"]
+}
+
+[sub_resource type="Animation" id="Animation_twhii"]
+resource_name = "mostrar_texto_sin_hueso"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("textoSinHueso:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("textoSinHueso:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("textoSinHueso:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Hueso! Hueso, hueso!"]
+}
+
+[sub_resource type="Animation" id="Animation_hi4ma"]
+resource_name = "respuesta"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("textoSinHueso:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("textoSinHueso:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("textoSinHueso:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["206... 206! 206!"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d44d6"]
+_data = {
+&"RESET": SubResource("Animation_lpiox"),
+&"mostrar_texto_sin_hueso": SubResource("Animation_twhii"),
+&"respuesta": SubResource("Animation_hi4ma")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qm2cm"]
+radius = 443.005
+
+[sub_resource type="LabelSettings" id="LabelSettings_8aaad"]
+font_size = 78
+font_color = Color(0.713726, 0.686275, 0.768627, 1)
+shadow_size = 38
+shadow_color = Color(0.109804, 0.0509804, 0.211765, 0.607843)
+
+[sub_resource type="GDScript" id="GDScript_53nwt"]
+script/source = "extends StaticBody2D
+
+@export var animacion : AnimatedSprite2D
+@export var animacion_desvanecer : AnimationPlayer
+
+func _process(delta):
+	animacion.play(\"idle\")
+
+func colision_jugador(cuerpo):
+	if cuerpo.name == \"murciegalito\":
+		if cuerpo.llave_1 > 0:
+			cuerpo.llave_1 = cuerpo.llave_1 -1
+			animacion_desvanecer.play(\"desvanecer\")
+			await get_tree().create_timer(2.0).timeout
+			queue_free()
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lag80"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_2g2hs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_66f4m")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lg2wl"]
+size = Vector2(1087, 653)
+
+[sub_resource type="Animation" id="Animation_a4etg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_4irve"]
+resource_name = "desvanecer"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.93333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1pc6p"]
+_data = {
+&"RESET": SubResource("Animation_a4etg"),
+&"desvanecer": SubResource("Animation_4irve")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dlrx8"]
+size = Vector2(1091, 1168)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3da1"]
+size = Vector2(1080, 1080)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8auba"]
+size = Vector2(3778, 1106)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2kuvd"]
+size = Vector2(606, 463)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ffvlp"]
+size = Vector2(614, 1107)
+
+[sub_resource type="Animation" id="Animation_8aaad"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../objetosLvl1SobreTapa/texto:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["La pared se abre"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../objetosLvl1SobreTapa/texto:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../objetosLvl1SobreTapa/texto:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_qm2cm"]
+resource_name = "texto"
+length = 6.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../objetosLvl1SobreTapa/texto:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.99, 2, 3.99, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": ["La pared se abre", "La pared se abre", "Siguiendo las runas", "Siguiendo las runas", "Frente a la pared"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../objetosLvl1SobreTapa/texto:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 2.5, 3.99, 4, 4.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../objetosLvl1SobreTapa/texto:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 6, 6.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8aaad"]
+_data = {
+&"RESET": SubResource("Animation_8aaad"),
+&"texto": SubResource("Animation_qm2cm")
+}
+
+[sub_resource type="Animation" id="Animation_lag80"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../objetosLvl1SobreTapa/texto:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["siguiendo un patrón..."]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../objetosLvl1SobreTapa/texto:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../objetosLvl1SobreTapa/texto:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_53nwt"]
+resource_name = "texto"
+length = 6.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../objetosLvl1SobreTapa/texto:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.99, 2, 3.99, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": ["siguiendo un patrón...", "siguiendo un patrón...", "del laberinto...", "del laberinto...", "en ese pasadizo..."]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../objetosLvl1SobreTapa/texto:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 2.5, 3.99, 4, 4.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../objetosLvl1SobreTapa/texto:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 6, 6.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lg2wl"]
+_data = {
+&"RESET": SubResource("Animation_lag80"),
+&"texto": SubResource("Animation_53nwt")
+}
+
+[sub_resource type="Animation" id="Animation_y3da1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../objetosLvl1SobreTapa/texto:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["BAILÁ"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../objetosLvl1SobreTapa/texto:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../objetosLvl1SobreTapa/texto:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_dlrx8"]
+resource_name = "texto"
+length = 6.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../objetosLvl1SobreTapa/texto:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.99, 2, 3.99, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": ["BAILÁ", "BAILÁ", "EN ORDEN", "EN ORDEN", "HUESO"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../objetosLvl1SobreTapa/texto:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 2.5, 3.99, 4, 4.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../objetosLvl1SobreTapa/texto:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 6, 6.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8auba"]
+_data = {
+&"RESET": SubResource("Animation_y3da1"),
+&"texto": SubResource("Animation_dlrx8")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8aaad"]
+size = Vector2(1200, 2146)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ram2j"]
+font_size = 58
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ykt4k"]
+texture = ExtResource("1_5tvtd")
+texture_region_size = Vector2i(1080, 1080)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-540, -540, 540, -540, 540, 0, 0, 0, 0, 540, -540, 540)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-540, 0, 540, 0, 540, -540, -540, -540)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(540, 0, 540, -540, -540, -540, -540, 0)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-540, -540, -540, 0, 0, 0, 0, 540, 540, 540, 540, -540)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -540, 0, 540, 540, 540, 540, -540)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -540, -540, -540, -540, 540, 0, 540)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -540, -540, -540, -540, 540, 0, 540, 0, 497.441)
+0:3/0/physics_layer_0/polygon_1/points = PackedVector2Array(540, 500.579, 540, 540, -3.13843, 540, -3.13843, 500.579)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-540, 495.598, -540, 540, 540, 540, 540, 495.598)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -540, 0, 540, 540, 540, 540, -540)
+3:3/0/physics_layer_0/polygon_1/points = PackedVector2Array(-540, 493.38, -540, 540, -5.3147, 540, -5.31468, 496.923)
+2:2/0 = 0
+3:4/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ocvmy"]
+texture = ExtResource("2_ykt4k")
+texture_region_size = Vector2i(1080, 1080)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -540, 0, 0, 540, 0, 540, -540)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -540, -540, -540, -540, 0, 0, 0)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-540, 540, 2.92822, 540, 2.92821, -507.311, -540, -508.775)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, 540, 0, -360, 540, -360, 540, 540)
+0:0/0/physics_layer_0/polygon_1/points = PackedVector2Array(-3.13843, -506.856, 540, -503.718, 540, -362.489, -6.27686, -362.489)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y3da1"]
+texture = ExtResource("20_lg2wl")
+texture_region_size = Vector2i(1080, 1080)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -510, -7, -540, 540, -540, 540, 540, -540, 540, -540, -512)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_27l0r"]
+texture = ExtResource("3_gyam2")
+texture_region_size = Vector2i(1080, 1080)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-540, -509.6704, 540, -510.0421, 540, 540, -540, 540)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8auba"]
+texture = ExtResource("22_dlrx8")
+texture_region_size = Vector2i(1080, 1080)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(5.314636, -511.98117, 5.314636, -540, -540, -540, -540, 540, 540, 540, 540, -508.43805)
+
+[sub_resource type="TileSet" id="TileSet_ocvmy"]
+tile_size = Vector2i(1080, 1080)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_ykt4k")
+sources/1 = SubResource("TileSetAtlasSource_ocvmy")
+sources/3 = SubResource("TileSetAtlasSource_27l0r")
+sources/2 = SubResource("TileSetAtlasSource_y3da1")
+sources/4 = SubResource("TileSetAtlasSource_8auba")
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_n0s6k"]
+scenes/1/scene = ExtResource("3_ocvmy")
+
+[sub_resource type="TileSet" id="TileSet_2g2hs"]
+tile_size = Vector2i(500, 500)
+sources/0 = SubResource("TileSetScenesCollectionSource_n0s6k")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yinww"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_mnj58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4irve")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1pc6p"]
+radius = 327.835
+
+[sub_resource type="Animation" id="Animation_tj2he"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("textoSinHueso:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("textoSinHueso:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_5xep5"]
+resource_name = "mostrar_texto_sin_hueso"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("textoSinHueso:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("textoSinHueso:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bsui4"]
+_data = {
+&"RESET": SubResource("Animation_tj2he"),
+&"mostrar_texto_sin_hueso": SubResource("Animation_5xep5")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4irve"]
+radius = 443.005
+
+[sub_resource type="LabelSettings" id="LabelSettings_icpuv"]
+font_size = 78
+font_color = Color(0.713726, 0.686275, 0.768627, 1)
+shadow_size = 38
+shadow_color = Color(0.109804, 0.0509804, 0.211765, 0.607843)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a4etg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_1pc6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_a4etg")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_7dwun"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["¡Tengo exactamente lo que necesitás!"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ftgfb"]
+resource_name = "texto_sin_moneda"
+length = 6.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.99, 2, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": ["¡Tengo exactamente lo que necesitás!", "¡Tengo exactamente lo que necesitás!", "Te puedo dar la llave de la barrera...", "Por una módica suma, claro..."]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 2.5, 3.99, 4, 4.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5, 6, 6.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r74rh"]
+_data = {
+&"RESET": SubResource("Animation_7dwun"),
+&"texto_sin_moneda": SubResource("Animation_ftgfb")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_gyam2"]
+font_size = 78
+font_color = Color(0.713726, 0.686275, 0.768627, 1)
+shadow_size = 38
+shadow_color = Color(0.109804, 0.0509804, 0.211765, 0.607843)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wnhri"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_2g2hs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_66f4m")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mnj58"]
+size = Vector2(1087, 653)
+
+[sub_resource type="Animation" id="Animation_m4gky"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_x5qq4"]
+resource_name = "desvanecer"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.93333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mctb3"]
+_data = {
+&"RESET": SubResource("Animation_m4gky"),
+&"desvanecer": SubResource("Animation_x5qq4")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_66f4m"]
+size = Vector2(1091, 1168)
+
+[sub_resource type="Animation" id="Animation_gyam2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("textoSinHueso:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["¡AAHHHHHH!"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("textoSinHueso:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("textoSinHueso:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_27l0r"]
+resource_name = "texto_con_slime"
+length = 8.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("textoSinHueso:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": ["¡AAHHHHHH!", "¡AHHqué? ¿Cómo dijiste?", "Eh... Sí, creo que puedo tirar un hueso", "¡Ahí va!"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("textoSinHueso:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 2.5, 3.99, 4, 4.5, 5.99, 6, 6.5, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("textoSinHueso:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 8, 8.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1itg4"]
+resource_name = "texto_sin_slime"
+length = 8.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("textoSinHueso:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": ["¡AAHHHHHH!", "¡ESTO ES HORRIBLE!", "¡ESTOY ENCADENADO!", "¡Y ESTÁ OSCURO! ¡LLENO DE HUESOS!"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("textoSinHueso:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 2.5, 3.99, 4, 4.5, 5.99, 6, 6.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("textoSinHueso:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 8, 8.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_27l0r"]
+_data = {
+&"RESET": SubResource("Animation_gyam2"),
+&"texto_con_slime": SubResource("Animation_27l0r"),
+&"texto_sin_slime": SubResource("Animation_1itg4")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8f22w"]
+size = Vector2(1087, 606)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hdn1f"]
+size = Vector2(1095, 824)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_er1db"]
+size = Vector2(1080, 1080)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lad37"]
+size = Vector2(3528, 1106)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d44d6"]
+size = Vector2(2460, 422)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lpiox"]
+size = Vector2(2452, 884)
+
+[sub_resource type="Animation" id="Animation_a2pa5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("texto:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("texto3:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("texto3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("texto2:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": ["Hola!"]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("texto2:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("texto3:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": ["Hola!"]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("texto2:visible_ratio")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("texto:text")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Hola!"]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("texto:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ygo7o"]
+resource_name = "animacion_texto"
+length = 8.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("texto:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.99, 2, 3.99, 4, 5.99, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["Hola!", "Hola!", "Escuchamos, una vez", "Escuchamos, una vez", "Haciendo un baile", "Haciendo un baile", "En algún lugar de"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("texto:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 2.5, 3.99, 4, 4.5, 5.99, 6, 6.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("texto3:visible_ratio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 2.5, 3.99, 4, 4.5, 5.99, 6, 6.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("texto3:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 8, 8.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("texto3:text")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 3.99, 4, 5.99, 5.9905787, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": ["hola!", "hola!", "hola!", "querés salir?", "querés salir?", "frente a la puerta...", "frente a la puerta...", "al final del pasillo.....", "los pasos están..."]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("texto2:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 3.99, 4, 5.99, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": ["HOLA!", "HOLA!", "HOLA!", "PARED TRAMPA", "PARED TRAMPA", "FLECHAS", "FLECHAS", "INSCRIPTOS"]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("texto2:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 8, 8.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("texto2:visible_ratio")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 2.5, 3.99, 4, 4.5, 5.99, 6, 6.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("texto:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 8, 8.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a2pa5"]
+_data = {
+&"RESET": SubResource("Animation_a2pa5"),
+&"animacion_texto": SubResource("Animation_ygo7o")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ram2j"]
+size = Vector2(3143, 3358)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_icpuv"]
+size = Vector2(1686, 908)
+
+[sub_resource type="Animation" id="Animation_gssgy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["¡Bienvenido! ¡Llegás justo a tiempo!"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_2kuvd"]
+resource_name = "explicacion_inicio"
+length = 12.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.99, 2, 3.99, 4, 5.99, 6, 7.99, 8, 9.99, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["¡Bienvenido! ¡Llegás justo a tiempo!", "¡Bienvenido! ¡Llegás justo a tiempo!", "Ya me estaba rindiendo...", "Ya me estaba rindiendo...", "¡Pero llegaste! Ahora puedo empezar...", "¡Pero llegaste! Ahora puedo empezar...", "¡Mi concurso de preguntas!", "¡Mi concurso de preguntas!", "¡Respondé y ganá un ticket de salida!", "¡Respondé y ganá un ticket de salida!", "¿Cuántos huesos tienen los humanos?"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 2.5, 3.99, 4, 4.5, 5.99, 6, 6.5, 7.99, 8, 8.5, 9.99, 10, 10.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 12, 12.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_2p01o"]
+resource_name = "ganaste"
+length = 6.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.99, 2, 3.99, 4, 5.99),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["COOOOORRECTO", "...COOOOORRECTO", "¡Acá tenés tu ticket de salida!", "¡Acá tenés tu ticket de salida!", "¡Suerte allá afuera!", "¡Suerte allá afuera!"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.99, 2, 2.5, 3.99, 4, 4.5, 5.99),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 6, 6.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ffvlp"]
+resource_name = "pregunta"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["¿Cuántos huesos tienen los humanos?"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1itg4"]
+_data = {
+&"RESET": SubResource("Animation_gssgy"),
+&"explicacion_inicio": SubResource("Animation_2kuvd"),
+&"ganaste": SubResource("Animation_2p01o"),
+&"pregunta": SubResource("Animation_ffvlp")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hi4ma"]
+radius = 443.005
+
+[node name="Nivel0" type="Node2D"]
+
+[node name="nivel_1" parent="." instance=ExtResource("1_ygo7o")]
+position = Vector2(29600, 45)
+
+[node name="slime_monedaLvl1" type="CharacterBody2D" parent="nivel_1" node_paths=PackedStringArray("animacion", "area", "barrera", "animacion_texto")]
+position = Vector2(4993, 7734)
+script = ExtResource("2_qm2cm")
+animacion = NodePath("animacion")
+area = NodePath("Area2D")
+barrera = NodePath("barreraSlimeFinal")
+animacion_texto = NodePath("AnimationPlayer")
+
+[node name="animacion" type="AnimatedSprite2D" parent="nivel_1/slime_monedaLvl1"]
+sprite_frames = SubResource("SpriteFrames_ygo7o")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/slime_monedaLvl1"]
+position = Vector2(-1, 63)
+shape = SubResource("CircleShape2D_a2pa5")
+debug_color = Color(0.869071, 0.278784, 0.55235, 0.42)
+
+[node name="barreraSlimeFinal" type="CollisionShape2D" parent="nivel_1/slime_monedaLvl1"]
+position = Vector2(40, 384.5)
+shape = SubResource("RectangleShape2D_2p01o")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="nivel_1/slime_monedaLvl1"]
+libraries = {
+&"": SubResource("AnimationLibrary_tj2he")
+}
+
+[node name="Area2D" type="Area2D" parent="nivel_1/slime_monedaLvl1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/slime_monedaLvl1/Area2D"]
+position = Vector2(-80, 361)
+shape = SubResource("RectangleShape2D_qm2cm")
+
+[node name="Label" type="Label" parent="nivel_1/slime_monedaLvl1"]
+offset_left = -404.0
+offset_top = -602.0
+offset_right = 447.0
+offset_bottom = -385.0
+text = "Soy el slime de seguridad"
+label_settings = SubResource("LabelSettings_2kuvd")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+visible_characters = 0
+visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="slime_huesoLvl1" type="CharacterBody2D" parent="nivel_1" node_paths=PackedStringArray("animacion", "area", "animacion_texto")]
+position = Vector2(8368, 2454)
+script = ExtResource("6_a2pa5")
+animacion = NodePath("animacion")
+area = NodePath("Area2D")
+animacion_texto = NodePath("AnimationPlayer")
+
+[node name="animacion" type="AnimatedSprite2D" parent="nivel_1/slime_huesoLvl1"]
+sprite_frames = SubResource("SpriteFrames_ffvlp")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/slime_huesoLvl1"]
+position = Vector2(-1, 63)
+shape = SubResource("CircleShape2D_2p01o")
+debug_color = Color(0.869071, 0.278784, 0.55235, 0.42)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="nivel_1/slime_huesoLvl1"]
+libraries = {
+&"": SubResource("AnimationLibrary_d44d6")
+}
+
+[node name="Area2D" type="Area2D" parent="nivel_1/slime_huesoLvl1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/slime_huesoLvl1/Area2D"]
+position = Vector2(-3, 63)
+shape = SubResource("CircleShape2D_qm2cm")
+
+[node name="textoSinHueso" type="Label" parent="nivel_1/slime_huesoLvl1"]
+offset_left = -404.0
+offset_top = -492.0
+offset_right = 407.0
+offset_bottom = -385.0
+text = "206... 206! 206!"
+label_settings = SubResource("LabelSettings_8aaad")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="barrera1" type="StaticBody2D" parent="nivel_1" node_paths=PackedStringArray("animacion", "animacion_desvanecer")]
+position = Vector2(-8913, 4010)
+script = SubResource("GDScript_53nwt")
+animacion = NodePath("animacion")
+animacion_desvanecer = NodePath("AnimationPlayer")
+
+[node name="animacion" type="AnimatedSprite2D" parent="nivel_1/barrera1"]
+position = Vector2(4, -18.0001)
+sprite_frames = SubResource("SpriteFrames_lag80")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/barrera1"]
+visible = false
+position = Vector2(-3.5, -195.5)
+shape = SubResource("RectangleShape2D_lg2wl")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="nivel_1/barrera1"]
+libraries = {
+&"": SubResource("AnimationLibrary_1pc6p")
+}
+
+[node name="area_barrera" type="Area2D" parent="nivel_1/barrera1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/barrera1/area_barrera"]
+position = Vector2(-3.5, -59)
+shape = SubResource("RectangleShape2D_dlrx8")
+
+[node name="llave" parent="nivel_1" instance=ExtResource("3_ocvmy")]
+position = Vector2(6201, -10093)
+
+[node name="calavera" parent="nivel_1" instance=ExtResource("16_dhqca")]
+position = Vector2(-4096, 11787)
+
+[node name="pared_trampa2" type="StaticBody2D" parent="nivel_1" node_paths=PackedStringArray("area_colision", "jugador")]
+position = Vector2(-4590, 3516)
+script = ExtResource("12_lg2wl")
+area_colision = NodePath("area_trampa2")
+jugador = NodePath("../../objetos/murciegalito")
+
+[node name="Sprite2D" type="Sprite2D" parent="nivel_1/pared_trampa2"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 1)
+texture = ExtResource("17_dgdec")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/pared_trampa2"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 1)
+position = Vector2(4, -1)
+shape = SubResource("RectangleShape2D_y3da1")
+
+[node name="area_trampa2" type="Area2D" parent="nivel_1/pared_trampa2"]
+position = Vector2(-1472, -1640)
+script = ExtResource("16_2kuvd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/pared_trampa2/area_trampa2"]
+position = Vector2(1495, 543)
+shape = SubResource("RectangleShape2D_8auba")
+
+[node name="cuadro1" type="StaticBody2D" parent="nivel_1" node_paths=PackedStringArray("area", "animacion_texto")]
+position = Vector2(-8083, -6183)
+script = ExtResource("46_dlrx8")
+area = NodePath("Area2D")
+animacion_texto = NodePath("AnimationPlayer")
+
+[node name="Sprite2D" type="Sprite2D" parent="nivel_1/cuadro1"]
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("24_gssgy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/cuadro1"]
+position = Vector2(4, -221.5)
+shape = SubResource("RectangleShape2D_2kuvd")
+
+[node name="Area2D" type="Area2D" parent="nivel_1/cuadro1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/cuadro1/Area2D"]
+position = Vector2(0, 96.5)
+shape = SubResource("RectangleShape2D_ffvlp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="nivel_1/cuadro1"]
+libraries = {
+&"": SubResource("AnimationLibrary_8aaad")
+}
+
+[node name="cuadro2" type="StaticBody2D" parent="nivel_1" node_paths=PackedStringArray("area", "animacion_texto")]
+position = Vector2(-1605, -11574)
+script = ExtResource("47_8auba")
+area = NodePath("Area2D")
+animacion_texto = NodePath("AnimationPlayer")
+
+[node name="Sprite2D" type="Sprite2D" parent="nivel_1/cuadro2"]
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("23_uxyyl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/cuadro2"]
+position = Vector2(4, -221.5)
+shape = SubResource("RectangleShape2D_2kuvd")
+
+[node name="Area2D" type="Area2D" parent="nivel_1/cuadro2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/cuadro2/Area2D"]
+position = Vector2(0, 96.5)
+shape = SubResource("RectangleShape2D_ffvlp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="nivel_1/cuadro2"]
+libraries = {
+&"": SubResource("AnimationLibrary_lg2wl")
+}
+
+[node name="cuadro3" type="StaticBody2D" parent="nivel_1" node_paths=PackedStringArray("area", "animacion_texto")]
+position = Vector2(4882, -17002)
+script = ExtResource("48_tj2he")
+area = NodePath("Area2D")
+animacion_texto = NodePath("AnimationPlayer")
+
+[node name="Sprite2D" type="Sprite2D" parent="nivel_1/cuadro3"]
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("25_1itg4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/cuadro3"]
+position = Vector2(4, -221.5)
+shape = SubResource("RectangleShape2D_2kuvd")
+
+[node name="Area2D" type="Area2D" parent="nivel_1/cuadro3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/cuadro3/Area2D"]
+position = Vector2(0, 96.5)
+shape = SubResource("RectangleShape2D_ffvlp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="nivel_1/cuadro3"]
+libraries = {
+&"": SubResource("AnimationLibrary_8auba")
+}
+
+[node name="puertaFinal" type="Area2D" parent="nivel_1" node_paths=PackedStringArray("pantalla_creditos")]
+position = Vector2(7203, 7740)
+script = ExtResource("16_2p01o")
+pantalla_creditos = NodePath("CanvasLayer")
+
+[node name="Sprite2D" type="Sprite2D" parent="nivel_1/puertaFinal"]
+position = Vector2(-181.99896, 55.50042)
+texture = ExtResource("16_lag80")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nivel_1/puertaFinal"]
+position = Vector2(-363, 58)
+shape = SubResource("RectangleShape2D_8aaad")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="nivel_1/puertaFinal"]
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="nivel_1/puertaFinal/CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_twhii")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="nivel_1/puertaFinal/CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.0
+offset_top = -11.5
+offset_right = 46.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Fin del nivel"
+label_settings = SubResource("LabelSettings_ram2j")
+
+[node name="terreno" type="Node2D" parent="."]
+
+[node name="piso" type="TileMapLayer" parent="terreno"]
+modulate = Color(0.45324937, 0.6188989, 0.50378656, 1)
+position = Vector2(-1349, -296)
+tile_map_data = PackedByteArray("AAABAP//AQAAAAEAAAAAAP//AQABAAEAAAD/////AAACAAEAAAD+////AAACAAEAAAABAAAAAAACAAIAAAABAAEAAAACAAIAAAD9/wAAAQABAAEAAAABAAIAAAACAAIAAAAAAAAAAAACAAIAAAD//wAAAAACAAIAAAD+/wAAAAACAAIAAAD//wEAAAACAAIAAAAAAAEAAAACAAIAAAAAAAIAAAACAAIAAAD//wIAAAACAAIAAAD+/wIAAAACAAIAAAABAAMAAAABAAMAAAD+/wMAAAABAAMAAAD//wMAAAABAAMAAAAAAAMAAAABAAMAAAD9/wIAAQABAAAAAAD9/wMAAAAAAAMAAAADAAIAAQAAAAAAAAADAAEAAAACAAIAAAADAAAAAQAAAAEAAAADAAMAAAADAAMAAAACAAMAAAABAAMAAAADAP//AAADAAEAAAACAP//AAACAAEAAAACAAAAAAACAAIAAAACAAEAAAACAAIAAAACAAIAAAACAAIAAAAEAAIAAQABAAAAAAAEAAMAAAAAAAIAAAAFAAMAAQAAAAEAAAAFAAAAAAADAAEAAAAEAAAAAAACAAEAAAAEAAEAAAACAAIAAAAFAAEAAAADAAIAAAAFAAIAAAADAAIAAAAEAAQAAAAAAAMAAAAFAAQAAAABAAMAAAAGAAQAAAABAAMAAAAHAAQAAAABAAMAAAAGAAMAAAACAAEAAAAHAAMAAQABAAEAAAAHAAEAAAAAAAIAAAAHAAAAAAAAAAEAAAAIAAAAAQABAAEAAAAKAAAAAAADAAEAAAAJAAAAAQAAAAEAAAAKAAEAAAADAAIAAAAKAAIAAAADAAIAAAAKAAMAAAADAAIAAAAKAAQAAAADAAMAAAAJAAQAAAABAAMAAAAIAAQAAAABAAMAAAAJAAEAAAACAAIAAAAIAAEAAAACAAIAAAAIAAIAAAACAAIAAAAIAAMAAAACAAIAAAAJAAMAAAACAAIAAAAJAAIAAAACAAIAAAAHAAIAAAAAAAIAAAABAP7/AAADAAIAAAABAP3/AAADAAIAAAAAAP7/AAAAAAIAAAAAAP3/AAAAAAIAAAAAAPz/AAAAAAIAAAABAPz/AAADAAIAAAAAAPv/AQABAAAAAAABAPv/AQAAAAAAAAD///r/AAACAAIAAAD///v/AwAAAAAAAAACAPv/AwAAAAAAAAACAPr/AAACAAIAAAACAPn/AQAAAAEAAAD///n/AQABAAEAAAAAAPj/AQABAAEAAAABAPj/AQAAAAEAAAACAPj/AAADAAEAAAD///j/AAAAAAEAAAAAAPn/AAACAAIAAAAAAPr/AAACAAIAAAABAPr/AAACAAIAAAABAPn/AAACAAIAAAADAPn/AAACAAEAAAAEAPn/AAACAAEAAAADAPr/AAACAAIAAAAEAPr/AAACAAIAAAAFAPn/AQABAAEAAAAHAPv/AAACAAIAAAAGAPv/AAACAAIAAAAHAPr/AAACAAIAAAAGAPj/AAACAAEAAAAHAPj/AAACAAEAAAAGAPz/AAABAAMAAAAHAPz/AAABAAMAAAAFAPz/AAAAAAMAAAAFAPj/AAAAAAEAAAAIAPn/AAADAAIAAAAIAPr/AAADAAIAAAAIAPv/AAADAAIAAAAIAPz/AAADAAMAAAABAPf/AAADAAIAAAABAPb/AAADAAIAAAAAAPf/AAAAAAIAAAAAAPb/AAAAAAIAAAAAAPX/AQABAAAAAAABAPX/AQAAAAAAAAABAPT/AAACAAIAAAAAAPT/AAACAAIAAAAAAPP/AAACAAIAAAAAAPL/AAACAAIAAAABAPL/AAACAAIAAAABAPP/AAACAAIAAAABAPH/AAACAAIAAAAAAPH/AAACAAIAAAD+//r/AAACAAIAAAD9//r/AAACAAIAAAD8//r/AAACAAIAAAD7//r/AAACAAIAAAD5//r/AAACAAIAAAD4//r/AAACAAIAAAD3//r/AAACAAIAAAD+//n/AAACAAEAAAD9//n/AAACAAEAAAD8//n/AAACAAEAAAD7//n/AAACAAEAAAD6//n/AAACAAEAAAD5//n/AAACAAEAAAD4//n/AAACAAEAAAD3//n/AAACAAEAAAD2//n/AAACAAEAAAD1//n/AAACAAEAAAD0//n/AAACAAEAAADz//n/AAAAAAEAAADz//r/AAAAAAIAAAD0//r/AAACAAIAAAD2//r/AAACAAIAAAD1//r/AAACAAIAAAD1//v/AQAAAAAAAAD0//v/AQABAAAAAAD1//z/AAADAAIAAAD0//z/AAAAAAIAAAD0//3/AAAAAAIAAAD1//3/AAADAAIAAAD1////AAADAAIAAAD1//7/AAADAAIAAADy////AAACAAIAAADz////AAACAAIAAAD0////AAACAAIAAAD0//7/AQABAAEAAADz//7/AAACAAEAAADy//7/AAACAAEAAADx//7/AQAAAAEAAADx/wAAAQAAAAAAAADx////AAACAAIAAADw/wAAAAACAAIAAADw////AAACAAIAAADw//7/AAACAAIAAADv//7/AAACAAIAAADu//7/AAACAAIAAADu////AAACAAIAAADu/wAAAAACAAIAAADv/wAAAAACAAIAAADv////AAACAAIAAADw/wEAAAABAAMAAADv/wEAAAABAAMAAADu/wEAAAABAAMAAADx/wEAAAADAAMAAADt/wEAAAAAAAMAAADt/wAAAAAAAAIAAADt////AAAAAAIAAADt//7/AAAAAAIAAADx//3/AAADAAEAAADt//3/AAAAAAEAAADu//3/AAABAAEAAADv//3/AAABAAEAAADw//3/AAABAAEAAAD+/wEAAAACAAIAAAD9/wEAAAACAAIAAAD8/wEAAAACAAIAAAD7/wEAAAACAAIAAAD6/wEAAAACAAIAAAD8/wAAAAABAAEAAAD7/wAAAAABAAEAAAD6/wAAAAABAAEAAAD5/wAAAAAAAAEAAAD5/wEAAAAAAAIAAAD5/wIAAAAAAAIAAAD5/wMAAAAAAAIAAAD6/wIAAQAAAAAAAAD6/wMAAAADAAIAAAD6/wQAAAADAAIAAAD5/wQAAAAAAAIAAAD5/wUAAAAAAAIAAAD5/wYAAAAAAAIAAAD5/wcAAAAAAAIAAAD6/wUAAAADAAIAAAD6/wYAAAADAAIAAAD6/wcAAAADAAIAAAD6/wgAAQAAAAEAAAD5/wkAAAAAAAIAAAD5/wgAAAAAAAIAAAD6/wkAAAACAAIAAAD7/wkAAAACAAIAAAD8/wkAAAACAAIAAAD7/wgAAAACAAEAAAD8/wgAAAACAAEAAAD+/wgAAAADAAEAAAD9/wgAAAACAAEAAAD+/wkAAAADAAIAAAD+/woAAAADAAIAAAD9/woAAQABAAAAAAD9/wsAAAAAAAIAAAD9/wwAAAAAAAMAAAD+/wwAAAABAAMAAAD//wwAAAABAAMAAAAAAAwAAAABAAMAAAD+/wsAAQAAAAEAAAD//wsAAAACAAEAAAAAAAsAAQABAAEAAAD9/wkAAAACAAIAAAABAAwAAAABAAMAAAACAAwAAAADAAMAAAACAAsAAAADAAEAAAABAAsAAQAAAAEAAAACAAgAAAADAAEAAAD//wgAAAAAAAEAAAD//wkAAAAAAAIAAAD//woAAAAAAAMAAAACAAoAAAADAAMAAAACAAkAAAADAAIAAAAAAAgAAAACAAEAAAABAAgAAAACAAEAAAABAAkAAAACAAIAAAABAAoAAAACAAIAAAAAAAoAAAACAAIAAAAAAAkAAAACAAIAAAAFAPv/AQABAAAAAAAFAPr/AAACAAIAAAAGAPr/AAACAAIAAAAGAPn/AAACAAIAAAAHAPn/AAACAAIAAAAIAPj/AAADAAEAAAACAPT/AAADAAIAAAACAPP/AAADAAIAAAACAPL/AAADAAIAAAACAPH/AAADAAIAAAD///P/AAAAAAIAAAD///L/AAAAAAIAAAD///H/AAAAAAIAAAD///T/AAAAAAIAAAACAPD/AAADAAEAAAD///D/AAAAAAEAAAAAAPD/AAABAAEAAAABAPD/AAABAAEAAAAJAP//AAADAAIAAAAIAP//AAAAAAIAAAAIAP7/AAAAAAEAAAAJAP7/AAADAAEAAAD7/wIAAwAAAAAAAAD8/wIAAwAAAAAAAAD6/woAAwAAAAAAAAD7/woAAwAAAAAAAAD8/woAAwAAAAAAAAD+//v/AwAAAAAAAAD7//v/AwAAAAAAAAD8//v/AwAAAAAAAAD9//v/AwAAAAAAAAD2//v/AwAAAAAAAAD3//v/AwAAAAAAAAD4//v/AwAAAAAAAAD5//v/AwAAAAAAAAD6//v/AwAAAAAAAAD6//r/AAACAAIAAAADAPv/AwAAAAAAAAAEAPv/AwAAAAAAAAD0/wAAAwAAAAAAAADz/wAAAwAAAAAAAADy/wAAAwAAAAAAAAD5/woABAAAAAAAAADz//v/BAAAAAAAAAD1/wAAAgAAAAAAAAACAPX/AgAAAAAAAAD///X/BAAAAAAAAAA=")
+tile_set = SubResource("TileSet_ocvmy")
+
+[node name="objetos" type="Node2D" parent="."]
+
+[node name="items" type="TileMapLayer" parent="objetos"]
+tile_set = SubResource("TileSet_2g2hs")
+
+[node name="slime_hueso" type="CharacterBody2D" parent="objetos" node_paths=PackedStringArray("animacion", "area", "animacion_texto")]
+position = Vector2(7192, -6857)
+script = ExtResource("4_4irve")
+animacion = NodePath("animacion")
+area = NodePath("Area2D")
+llave = ExtResource("3_ocvmy")
+animacion_texto = NodePath("AnimationPlayer")
+
+[node name="animacion" type="AnimatedSprite2D" parent="objetos/slime_hueso"]
+sprite_frames = SubResource("SpriteFrames_yinww")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/slime_hueso"]
+position = Vector2(-1, 63)
+shape = SubResource("CircleShape2D_1pc6p")
+debug_color = Color(0.869071, 0.278784, 0.55235, 0.42)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/slime_hueso"]
+libraries = {
+&"": SubResource("AnimationLibrary_bsui4")
+}
+
+[node name="Area2D" type="Area2D" parent="objetos/slime_hueso"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/slime_hueso/Area2D"]
+position = Vector2(-3, 63)
+shape = SubResource("CircleShape2D_4irve")
+
+[node name="textoSinHueso" type="Label" parent="objetos/slime_hueso"]
+offset_left = -404.0
+offset_top = -492.0
+offset_right = 407.0
+offset_bottom = -385.0
+text = "Hueso! Hueso, hueso!"
+label_settings = SubResource("LabelSettings_icpuv")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="slime_moneda" type="CharacterBody2D" parent="objetos" node_paths=PackedStringArray("animacion", "area", "animacion_texto")]
+position = Vector2(1936, 3474)
+script = ExtResource("7_8f22w")
+animacion = NodePath("animacion")
+area = NodePath("Area2D")
+llave = ExtResource("8_lad37")
+animacion_texto = NodePath("AnimationPlayer")
+
+[node name="animacion" type="AnimatedSprite2D" parent="objetos/slime_moneda"]
+sprite_frames = SubResource("SpriteFrames_a4etg")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/slime_moneda"]
+position = Vector2(-1, 63)
+shape = SubResource("CircleShape2D_1pc6p")
+debug_color = Color(0.869071, 0.278784, 0.55235, 0.42)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/slime_moneda"]
+libraries = {
+&"": SubResource("AnimationLibrary_r74rh")
+}
+
+[node name="Area2D" type="Area2D" parent="objetos/slime_moneda"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/slime_moneda/Area2D"]
+position = Vector2(-3, 63)
+shape = SubResource("CircleShape2D_4irve")
+
+[node name="Label" type="Label" parent="objetos/slime_moneda"]
+offset_left = -404.0
+offset_top = -602.0
+offset_right = 447.0
+offset_bottom = -385.0
+text = "¡Tengo exactamente lo que necesitás!"
+label_settings = SubResource("LabelSettings_gyam2")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="barrera1" type="StaticBody2D" parent="objetos" node_paths=PackedStringArray("animacion", "animacion_desvanecer")]
+position = Vector2(-262, -8380)
+script = ExtResource("5_66f4m")
+animacion = NodePath("animacion")
+animacion_desvanecer = NodePath("AnimationPlayer")
+
+[node name="animacion" type="AnimatedSprite2D" parent="objetos/barrera1"]
+position = Vector2(4, -18.0001)
+sprite_frames = SubResource("SpriteFrames_wnhri")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/barrera1"]
+visible = false
+position = Vector2(-3.5, -195.5)
+shape = SubResource("RectangleShape2D_mnj58")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/barrera1"]
+libraries = {
+&"": SubResource("AnimationLibrary_mctb3")
+}
+
+[node name="area_barrera" type="Area2D" parent="objetos/barrera1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/barrera1/area_barrera"]
+visible = false
+position = Vector2(-3.5, -59)
+shape = SubResource("RectangleShape2D_66f4m")
+
+[node name="reja" type="StaticBody2D" parent="objetos" node_paths=PackedStringArray("area", "animacion_texto")]
+position = Vector2(8371, 266)
+script = ExtResource("15_6n4jw")
+area = NodePath("Area2D")
+calavera = ExtResource("16_dhqca")
+animacion_texto = NodePath("AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/reja"]
+libraries = {
+&"": SubResource("AnimationLibrary_27l0r")
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="objetos/reja"]
+texture = ExtResource("12_yinww")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/reja"]
+position = Vector2(0.5, -262)
+shape = SubResource("RectangleShape2D_8f22w")
+
+[node name="textoSinHueso" type="Label" parent="objetos/reja"]
+offset_left = -404.0
+offset_top = -733.0
+offset_right = 407.0
+offset_bottom = -516.0
+text = "¡AAHHHHHH!"
+label_settings = SubResource("LabelSettings_icpuv")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Area2D" type="Area2D" parent="objetos/reja"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/reja/Area2D"]
+position = Vector2(1.5, -153)
+shape = SubResource("RectangleShape2D_hdn1f")
+debug_color = Color(0.813665, 0.00202881, 0.979387, 0.42)
+
+[node name="montana" type="StaticBody2D" parent="objetos" node_paths=PackedStringArray("sonido")]
+position = Vector2(-19513, -466)
+script = ExtResource("15_7eoxc")
+sonido = NodePath("AudioStreamPlayer")
+
+[node name="Sprite2D" type="Sprite2D" parent="objetos/montana"]
+position = Vector2(28, 18)
+scale = Vector2(3, 3)
+texture = ExtResource("16_dgdec")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="objetos/montana"]
+polygon = PackedVector2Array(1097, 459, 1101, 271, 1055, 116, 938, 54, 888, -1, 896, -168, 850, -272, 733, -389, 717, -519, 583, -606, 437, -673, 416, -757, 454, -828, 445, -870, 403, -895, 399, -966, 370, -1033, 286, -1078, 257, -1162, 169, -1187, 107, -1158, 82, -1124, -6, -1116, -60, -1049, -144, -1028, -165, -907, -290, -870, -374, -753, -403, -602, -499, -573, -553, -510, -683, -485, -800, -402, -925, -222, -1067, -122, -1213, 58, -1280, 254, -1272, 342, -1334, 526, -1387, 835, -935, 956, 48, 903, 911, 762, 1199, 656)
+
+[node name="Area2D" type="Area2D" parent="objetos/montana"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="objetos/montana/Area2D"]
+polygon = PackedVector2Array(1097, 459, 1101, 271, 1055, 116, 938, 54, 888, -1, 896, -168, 850, -272, 733, -389, 717, -519, 583, -606, 437, -673, 416, -757, 454, -828, 445, -870, 403, -895, 399, -966, 370, -1033, 286, -1078, 257, -1162, 169, -1187, 107, -1158, 82, -1124, -6, -1116, -60, -1049, -144, -1028, -165, -907, -290, -870, -374, -753, -403, -602, -499, -573, -553, -510, -683, -485, -800, -402, -925, -222, -1067, -122, -1213, 58, -1280, 254, -1272, 342, -1334, 526, -1413, 981, -1427, 1304, -1340, 1483, -1021, 1639, -645, 1604, -315, 1650, 1, 1711, 415, 1646, 669, 1551, 950, 1540, 1277, 1502, 1398, 1358, 1371, 1113, 1336, 889, 1219, 696)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="objetos/montana"]
+stream = ExtResource("20_1itg4")
+bus = &"Efectos"
+
+[node name="pared_trampa" type="StaticBody2D" parent="objetos" node_paths=PackedStringArray("area_colision", "jugador")]
+position = Vector2(-13229, -5123)
+script = ExtResource("20_thws0")
+area_colision = NodePath("area_trampa")
+jugador = NodePath("../murciegalito")
+
+[node name="Sprite2D" type="Sprite2D" parent="objetos/pared_trampa"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 1)
+texture = ExtResource("17_dgdec")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/pared_trampa"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 1)
+position = Vector2(4, -1)
+shape = SubResource("RectangleShape2D_er1db")
+
+[node name="area_trampa" type="Area2D" parent="objetos/pared_trampa"]
+position = Vector2(-1472, -1640)
+script = ExtResource("18_er1db")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/pared_trampa/area_trampa"]
+position = Vector2(1620, 543)
+shape = SubResource("RectangleShape2D_lad37")
+
+[node name="cuadros" type="StaticBody2D" parent="objetos" node_paths=PackedStringArray("area", "animacion_texto")]
+position = Vector2(-9179, -7224)
+script = ExtResource("23_gssgy")
+area = NodePath("Area2D")
+animacion_texto = NodePath("AnimationPlayer")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/cuadros"]
+position = Vector2(4, -210)
+shape = SubResource("RectangleShape2D_d44d6")
+debug_color = Color(0, 0.646111, 0.244846, 0.42)
+
+[node name="Area2D" type="Area2D" parent="objetos/cuadros"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/cuadros/Area2D"]
+position = Vector2(4, 144)
+shape = SubResource("RectangleShape2D_lpiox")
+
+[node name="Sprite2D" type="Sprite2D" parent="objetos/cuadros"]
+position = Vector2(-968, 40.5001)
+scale = Vector2(0.773148, 0.773148)
+texture = ExtResource("23_uxyyl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="objetos/cuadros"]
+position = Vector2(0, 40.5)
+scale = Vector2(0.773, 0.773)
+texture = ExtResource("24_gssgy")
+
+[node name="Sprite2D3" type="Sprite2D" parent="objetos/cuadros"]
+position = Vector2(968, 40.5)
+scale = Vector2(0.773, 0.773)
+texture = ExtResource("25_1itg4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/cuadros"]
+libraries = {
+&"": SubResource("AnimationLibrary_a2pa5")
+}
+
+[node name="texto" type="Label" parent="objetos/cuadros"]
+offset_left = -404.0
+offset_top = -492.0
+offset_right = 407.0
+offset_bottom = -385.0
+text = "Hola!"
+label_settings = SubResource("LabelSettings_icpuv")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="texto2" type="Label" parent="objetos/cuadros"]
+offset_left = 563.0
+offset_top = -492.0
+offset_right = 1374.0
+offset_bottom = -385.0
+text = "Hola!"
+label_settings = SubResource("LabelSettings_icpuv")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="texto3" type="Label" parent="objetos/cuadros"]
+offset_left = -1373.0
+offset_top = -492.0
+offset_right = -562.0
+offset_bottom = -385.0
+text = "Hola!"
+label_settings = SubResource("LabelSettings_icpuv")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="codigo" type="Area2D" parent="objetos"]
+position = Vector2(-261, -14501)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/codigo"]
+position = Vector2(-2.5, -9)
+shape = SubResource("RectangleShape2D_ram2j")
+
+[node name="Sprite2D" type="Sprite2D" parent="objetos/codigo"]
+texture = ExtResource("26_gyam2")
+
+[node name="escaleraFinal" type="Area2D" parent="objetos"]
+position = Vector2(-281, 10435)
+script = ExtResource("25_lpiox")
+
+[node name="Sprite2D" type="Sprite2D" parent="objetos/escaleraFinal"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 1)
+position = Vector2(9.450218e-13, -133)
+rotation = 3.1415927
+scale = Vector2(0.7962963, 0.7962963)
+texture = ExtResource("33_27l0r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/escaleraFinal"]
+position = Vector2(1, -525)
+shape = SubResource("RectangleShape2D_icpuv")
+
+[node name="murciegalito" parent="objetos" instance=ExtResource("1_m0eps")]
+position = Vector2(-3202, 53)
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="objetos/murciegalito"]
+visible = false
+
+[node name="llave1" type="TextureRect" parent="objetos/murciegalito/CanvasLayer2"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -1080.0
+offset_right = 1080.0
+grow_vertical = 0
+texture = ExtResource("28_27l0r")
+stretch_mode = 5
+
+[node name="llave2" type="TextureRect" parent="objetos/murciegalito/CanvasLayer2"]
+offset_left = -3278.0
+offset_top = 58.0
+offset_right = -3238.0
+offset_bottom = 98.0
+
+[node name="calavera" type="TextureRect" parent="objetos/murciegalito/CanvasLayer2"]
+offset_left = -3278.0
+offset_top = 58.0
+offset_right = -3238.0
+offset_bottom = 98.0
+
+[node name="moneda" type="TextureRect" parent="objetos/murciegalito/CanvasLayer2"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -3278.0
+offset_top = -630.0
+offset_right = -3238.0
+offset_bottom = -590.0
+grow_vertical = 0
+
+[node name="barrera2" type="StaticBody2D" parent="objetos" node_paths=PackedStringArray("animacion", "animacion_desvanecer")]
+position = Vector2(-7829, 4530)
+script = ExtResource("13_hdn1f")
+animacion = NodePath("animacion")
+animacion_desvanecer = NodePath("AnimationPlayer")
+
+[node name="animacion" type="AnimatedSprite2D" parent="objetos/barrera2"]
+modulate = Color(0.0588235, 0.215686, 0.145098, 1)
+sprite_frames = SubResource("SpriteFrames_wnhri")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/barrera2"]
+visible = false
+position = Vector2(-3.5, 1.5)
+shape = SubResource("RectangleShape2D_mnj58")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/barrera2"]
+libraries = {
+&"": SubResource("AnimationLibrary_mctb3")
+}
+
+[node name="area_barrera" type="Area2D" parent="objetos/barrera2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/barrera2/area_barrera"]
+visible = false
+position = Vector2(-3.5, -57.5)
+shape = SubResource("RectangleShape2D_66f4m")
+
+[node name="tapa_lvl1" type="Node2D" parent="."]
+
+[node name="tapa1" type="Sprite2D" parent="tapa_lvl1"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 1)
+position = Vector2(26091, -5117.4995)
+scale = Vector2(2.9833336, 2.9379625)
+texture = ExtResource("23_twhii")
+
+[node name="tapa2" type="Sprite2D" parent="tapa_lvl1"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 1)
+position = Vector2(22832.5, -7811)
+scale = Vector2(3.3472228, 2.048148)
+texture = ExtResource("23_twhii")
+
+[node name="tapa3" type="Sprite2D" parent="tapa_lvl1"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 1)
+position = Vector2(26091, -10550)
+scale = Vector2(2.9833336, 2.9379625)
+texture = ExtResource("23_twhii")
+
+[node name="tapa4" type="Sprite2D" parent="tapa_lvl1"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 1)
+position = Vector2(29271, -13207)
+scale = Vector2(3.3472228, 2.048148)
+texture = ExtResource("23_twhii")
+
+[node name="tapa5" type="Sprite2D" parent="tapa_lvl1"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 1)
+position = Vector2(32574.002, -15936)
+scale = Vector2(2.9833336, 2.9379625)
+texture = ExtResource("23_twhii")
+
+[node name="tapa6" type="Sprite2D" parent="tapa_lvl1"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 1)
+position = Vector2(35837, -13207)
+scale = Vector2(3.3472228, 2.048148)
+texture = ExtResource("23_twhii")
+
+[node name="tapaPared1" type="Sprite2D" parent="tapa_lvl1"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 0.54901963)
+position = Vector2(22311, -6192)
+texture = ExtResource("17_dgdec")
+
+[node name="tapaPared2" type="Sprite2D" parent="tapa_lvl1"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 0.54901963)
+position = Vector2(23391, -6192)
+texture = ExtResource("17_dgdec")
+
+[node name="tapaPared3" type="Sprite2D" parent="tapa_lvl1"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 0.54901963)
+position = Vector2(28790, -11591)
+texture = ExtResource("17_dgdec")
+
+[node name="tapaPared4" type="Sprite2D" parent="tapa_lvl1"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 0.54901963)
+position = Vector2(29870, -11591)
+texture = ExtResource("17_dgdec")
+
+[node name="tapaPared5" type="Sprite2D" parent="tapa_lvl1"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 0.54901963)
+position = Vector2(35271, -11591)
+texture = ExtResource("17_dgdec")
+
+[node name="tapaPared6" type="Sprite2D" parent="tapa_lvl1"]
+modulate = Color(0.45490196, 0.61960787, 0.5019608, 0.54901963)
+position = Vector2(36351, -11591)
+texture = ExtResource("17_dgdec")
+
+[node name="objetosLvl1SobreTapa" type="Node2D" parent="."]
+
+[node name="texto" type="Label" parent="objetosLvl1SobreTapa"]
+offset_left = 21113.0
+offset_top = -6630.0
+offset_right = 21924.0
+offset_bottom = -6523.0
+text = "BAILÁ"
+label_settings = SubResource("LabelSettings_icpuv")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="texto2" type="Label" parent="objetosLvl1SobreTapa"]
+offset_left = 27591.0
+offset_top = -12021.0
+offset_right = 28402.0
+offset_bottom = -11914.0
+text = "siguiendo un patrón..."
+label_settings = SubResource("LabelSettings_icpuv")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="texto3" type="Label" parent="objetosLvl1SobreTapa"]
+offset_left = 34078.0
+offset_top = -17449.0
+offset_right = 34889.0
+offset_bottom = -17342.0
+text = "BAILÁ"
+label_settings = SubResource("LabelSettings_icpuv")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="slime_monedaLvl12" type="CharacterBody2D" parent="objetosLvl1SobreTapa" node_paths=PackedStringArray("animacion", "area", "animacion_texto")]
+position = Vector2(20635, 7389)
+script = ExtResource("6_hi4ma")
+animacion = NodePath("animacion")
+area = NodePath("Area2D")
+animacion_texto = NodePath("AnimationPlayer")
+ticket = ExtResource("42_8aaad")
+
+[node name="animacion" type="AnimatedSprite2D" parent="objetosLvl1SobreTapa/slime_monedaLvl12"]
+modulate = Color(0.40672064, 1.1624898, 1.1624898, 1)
+sprite_frames = SubResource("SpriteFrames_ygo7o")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetosLvl1SobreTapa/slime_monedaLvl12"]
+position = Vector2(-1, 63)
+shape = SubResource("CircleShape2D_a2pa5")
+debug_color = Color(0.869071, 0.278784, 0.55235, 0.42)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetosLvl1SobreTapa/slime_monedaLvl12"]
+libraries = {
+&"": SubResource("AnimationLibrary_1itg4")
+}
+
+[node name="Area2D" type="Area2D" parent="objetosLvl1SobreTapa/slime_monedaLvl12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetosLvl1SobreTapa/slime_monedaLvl12/Area2D"]
+position = Vector2(-3, 63)
+shape = SubResource("CircleShape2D_hi4ma")
+
+[node name="Label" type="Label" parent="objetosLvl1SobreTapa/slime_monedaLvl12"]
+offset_left = -404.0
+offset_top = -602.0
+offset_right = 447.0
+offset_bottom = -385.0
+text = "¡Bienvenido! ¡Llegás justo a tiempo!"
+label_settings = SubResource("LabelSettings_2kuvd")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+visible_characters = 0
+visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="nivel_1/slime_monedaLvl1/Area2D" to="nivel_1/slime_monedaLvl1" method="colision_jugador"]
+[connection signal="body_entered" from="nivel_1/slime_huesoLvl1/Area2D" to="nivel_1/slime_huesoLvl1" method="colision_jugador"]
+[connection signal="body_entered" from="nivel_1/barrera1/area_barrera" to="nivel_1/barrera1" method="colision_jugador"]
+[connection signal="body_entered" from="nivel_1/pared_trampa2/area_trampa2" to="nivel_1/pared_trampa2/area_trampa2" method="colision_personaje"]
+[connection signal="body_exited" from="nivel_1/pared_trampa2/area_trampa2" to="nivel_1/pared_trampa2/area_trampa2" method="exit_colision_personaje"]
+[connection signal="body_entered" from="nivel_1/cuadro1/Area2D" to="nivel_1/cuadro1" method="colision_jugador"]
+[connection signal="body_entered" from="nivel_1/cuadro2/Area2D" to="nivel_1/cuadro2" method="colision_jugador"]
+[connection signal="body_entered" from="nivel_1/cuadro3/Area2D" to="nivel_1/cuadro3" method="colision_jugador"]
+[connection signal="body_entered" from="nivel_1/puertaFinal" to="nivel_1/puertaFinal" method="colision_final"]
+[connection signal="body_entered" from="objetos/slime_hueso/Area2D" to="objetos/slime_hueso" method="colision_jugador"]
+[connection signal="body_entered" from="objetos/slime_moneda/Area2D" to="objetos/slime_moneda" method="colision_jugador"]
+[connection signal="body_entered" from="objetos/barrera1/area_barrera" to="objetos/barrera1" method="colision_jugador"]
+[connection signal="body_entered" from="objetos/reja/Area2D" to="objetos/reja" method="colision_jugador"]
+[connection signal="body_entered" from="objetos/montana/Area2D" to="objetos/montana" method="colision_jugador"]
+[connection signal="body_entered" from="objetos/pared_trampa/area_trampa" to="objetos/pared_trampa/area_trampa" method="colision_personaje"]
+[connection signal="body_exited" from="objetos/pared_trampa/area_trampa" to="objetos/pared_trampa/area_trampa" method="exit_colision_personaje"]
+[connection signal="body_entered" from="objetos/cuadros/Area2D" to="objetos/cuadros" method="colision_jugador"]
+[connection signal="body_entered" from="objetos/escaleraFinal" to="objetos/escaleraFinal" method="colision_final"]
+[connection signal="body_entered" from="objetos/barrera2/area_barrera" to="objetos/barrera2" method="colision_jugador"]
+[connection signal="body_entered" from="objetosLvl1SobreTapa/slime_monedaLvl12/Area2D" to="objetosLvl1SobreTapa/slime_monedaLvl12" method="colision_jugador"]

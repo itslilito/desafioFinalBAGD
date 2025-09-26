@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://cerluodyikjfi"]
+
+[ext_resource type="Texture2D" uid="uid://duptao40g5kn0" path="res://assets/sprites/llave1.png" id="1_abgrx"]
+[ext_resource type="Script" uid="uid://cqq5uv5v4trjj" path="res://scenes/llave_2.gd" id="1_bmu31"]
+[ext_resource type="Texture2D" uid="uid://7n00yamiblr7" path="res://assets/sprites/llave2.png" id="2_bmu31"]
+[ext_resource type="AudioStream" uid="uid://ca7u4oymnrmd7" path="res://assets/audio/glu.wav" id="4_jnip6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jnip6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_abgrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_bmu31")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6bm04"]
+radius = 126.0
+height = 364.0
+
+[node name="llave2" type="Area2D" node_paths=PackedStringArray("animacion", "sonido", "colision")]
+script = ExtResource("1_bmu31")
+animacion = NodePath("AnimatedSprite2D")
+sonido = NodePath("glu")
+colision = NodePath("CollisionShape2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.0588235, 0.215686, 0.145098, 1)
+sprite_frames = SubResource("SpriteFrames_jnip6")
+animation = &"idle"
+frame_progress = 0.281556
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("CapsuleShape2D_6bm04")
+
+[node name="glu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_jnip6")
+
+[connection signal="body_entered" from="." to="." method="colision_personaje"]
