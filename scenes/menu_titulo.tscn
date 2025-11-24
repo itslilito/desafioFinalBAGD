@@ -1,0 +1,179 @@
+[gd_scene load_steps=22 format=3 uid="uid://bop4gkloct1j5"]
+
+[ext_resource type="Texture2D" uid="uid://dhu2rhwjgadky" path="res://assets/ui/fondo_tituloCH.png" id="1_4l26j"]
+[ext_resource type="Texture2D" uid="uid://b6r4wa3f3edrd" path="res://assets/ui/logoEnBlanco.png" id="1_gro8w"]
+[ext_resource type="Texture2D" uid="uid://cu8vj2t8krs01" path="res://assets/ui/boton_jugar.png" id="2_2p853"]
+[ext_resource type="Script" uid="uid://bk7reptdk8eox" path="res://scenes/boton_salir.gd" id="2_3rmwk"]
+[ext_resource type="Script" uid="uid://clde8575185fh" path="res://scenes/boton_jugar.gd" id="2_p0eem"]
+[ext_resource type="Script" uid="uid://xkljxpuvhich" path="res://scenes/boton_creditos.gd" id="3_53b47"]
+[ext_resource type="Texture2D" uid="uid://7lg6fyup64uh" path="res://assets/ui/boton_jugarH.png" id="3_tdaqg"]
+[ext_resource type="AudioStream" uid="uid://ca7u4oymnrmd7" path="res://assets/audio/glu.wav" id="4_p0eem"]
+[ext_resource type="Texture2D" uid="uid://cel4b2vbsdum6" path="res://assets/ui/boton_ajustes.png" id="5_nghaa"]
+[ext_resource type="Texture2D" uid="uid://da8nbt2ke3j2w" path="res://assets/ui/boton_ajustesH.png" id="6_77g00"]
+[ext_resource type="Texture2D" uid="uid://ccsx5he1p3ync" path="res://assets/ui/boton_creditos.png" id="7_3sml1"]
+[ext_resource type="Script" uid="uid://cd35mp10bpi4j" path="res://scenes/boton_volver_creditos.gd" id="7_l48vw"]
+[ext_resource type="Texture2D" uid="uid://c0v8x4fn1tfpr" path="res://assets/ui/boton_creditosH.png" id="8_ut1gk"]
+[ext_resource type="Texture2D" uid="uid://bjkdffrstq0sd" path="res://assets/ui/boton_salir.png" id="10_n0aht"]
+[ext_resource type="Texture2D" uid="uid://c5l723wiaiaqy" path="res://assets/ui/boton_salirH.png" id="11_xs873"]
+[ext_resource type="Texture2D" uid="uid://b41jd0cb2evpy" path="res://assets/ui/bgcreditos.png" id="14_n0aht"]
+[ext_resource type="FontFile" uid="uid://bdxbe35m7k87r" path="res://assets/fuentes/DUNGRG__.TTF" id="15_xs873"]
+[ext_resource type="Texture2D" uid="uid://dfr8mxj8ltvwk" path="res://assets/ui/boton_volver.png" id="16_gro8w"]
+[ext_resource type="Texture2D" uid="uid://xdfl6uatywq4" path="res://assets/ui/boton_volverH.png" id="17_4l26j"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ut1gk"]
+font = ExtResource("15_xs873")
+font_size = 86
+font_color = Color(0.9137255, 0.89411765, 0.9607843, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_n0aht"]
+font = ExtResource("15_xs873")
+font_size = 41
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_4l26j")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 100
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_gro8w")
+expand_mode = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_right = 200
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="boton_jugar" type="TextureButton" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer" node_paths=PackedStringArray("sonido_click")]
+layout_mode = 2
+texture_normal = ExtResource("2_2p853")
+texture_hover = ExtResource("3_tdaqg")
+stretch_mode = 5
+script = ExtResource("2_p0eem")
+sonido_click = NodePath("../AudioStreamPlayer")
+
+[node name="boton_ajustes" type="TextureButton" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+texture_normal = ExtResource("5_nghaa")
+texture_hover = ExtResource("6_77g00")
+stretch_mode = 5
+
+[node name="boton_creditos" type="TextureButton" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer" node_paths=PackedStringArray("sonido_click", "pantalla_creditos")]
+layout_mode = 2
+texture_normal = ExtResource("7_3sml1")
+texture_hover = ExtResource("8_ut1gk")
+stretch_mode = 5
+script = ExtResource("3_53b47")
+sonido_click = NodePath("../AudioStreamPlayer")
+pantalla_creditos = NodePath("../../../../../creditos")
+
+[node name="boton_salir" type="TextureButton" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer" node_paths=PackedStringArray("sonido_click")]
+layout_mode = 2
+texture_normal = ExtResource("10_n0aht")
+texture_hover = ExtResource("11_xs873")
+stretch_mode = 5
+script = ExtResource("2_3rmwk")
+sonido_click = NodePath("../AudioStreamPlayer")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer"]
+stream = ExtResource("4_p0eem")
+
+[node name="creditos" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="creditos"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_n0aht")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="creditos"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 100
+
+[node name="VBoxContainer" type="VBoxContainer" parent="creditos/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 45
+
+[node name="Label" type="Label" parent="creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Creditos"
+label_settings = SubResource("LabelSettings_ut1gk")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Desarrollo, arte, musica y diseno de
+Lilo Ortiz
+(https://its-lilito.itch.io/)"
+label_settings = SubResource("LabelSettings_n0aht")
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="creditos/MarginContainer/VBoxContainer" node_paths=PackedStringArray("sonido_click", "pantalla_creditos")]
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("16_gro8w")
+texture_hover = ExtResource("17_4l26j")
+script = ExtResource("7_l48vw")
+sonido_click = NodePath("../../../../MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/AudioStreamPlayer")
+pantalla_creditos = NodePath("../../..")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/boton_jugar" to="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/boton_jugar" method="boton_presionado"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/boton_creditos" to="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/boton_creditos" method="boton_presionado"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/boton_salir" to="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/boton_salir" method="boton_presionado"]
+[connection signal="pressed" from="creditos/MarginContainer/VBoxContainer/TextureButton" to="creditos/MarginContainer/VBoxContainer/TextureButton" method="boton_presionado"]
